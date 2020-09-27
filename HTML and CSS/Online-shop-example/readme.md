@@ -1,0 +1,1 @@
+This is a example of how we structure our directories while working with html for our site

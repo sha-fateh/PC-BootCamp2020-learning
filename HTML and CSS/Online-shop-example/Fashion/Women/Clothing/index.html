@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <!--Here we are learning how to use the class attribute -->
+        <style>
+            .head {background-color: goldenrod;}
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+        <h1>SALES PRICE</h1>
+        <table width='500' border="2" bgcolor="#efefef" cellpadding="10" cellspacing="5">
+            <tr>
+                <thead>
+                    <th class="head">Products</th>
+                    <th class="head">Orginal Price</th>
+                    <th class="head">Discount Price</th>
+                </thead>
+            </tr>
+
+            <tr>
+                <tbody>
+
+                <th class="head">Printed unstitched 2pcs</th>
+                <td>2000</td>
+                <td>1750</td>
+            </tr>
+            <tr>
+                <th class="head">Printed unstitched 3pcs</th>
+                <td colspan="2">3000</td>
+            </tr>
+            <tr>
+                <th class="head">Stitched 2pcs</th>
+                <td rowspan="2">4000</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <th class="head">Stitched 3pcs</th>
+                <td>3000</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3">Note: Discounted prices are only available on sale.</td>
+            </tr>
+            </tfoot>
+        </table>
+        <br/>
+    
+        <a href="../../../index.html">Take me to the main index</a>
+
+    </body>
+</html>

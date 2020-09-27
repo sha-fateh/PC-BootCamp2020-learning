@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+  <head>
+    <title>sign-up</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+      <form action="https://www.example.com/sign-up.php" method="POST"><!--here we can also use GET method, but it shows the information in the url box, which is not secure when sending info like pswds-->
+        <h1>Sign-up Form</h1>
+            <fieldset><!--this tag allows to group similar form controls-->
+                <legend>Personal Details</legend><!--this gives a title to the fieldset-->
+            <p>Name
+            <input type="text" name="name" size="15" minlength="3" maxlength="30"/>
+            </p>
+        <!--Now we can label our fields by two ways: wrapping the field with the label tags or making a separate tag of label with a "for" value that can hold the text of the label
+        and then you would use the label id in the input opening tag with the label id field-->    
+            <p>
+                Gender
+                <input type="radio" name="gender" value="m"/> Male
+                <input type="radio" name="gender" value="f"/> Female
+            </p>
+            
+            <p>Date of Birth
+                <input type="date" value="dob"/>
+
+            </p>
+            <p>
+
+                Nationality
+                <select type="Nationality">
+                    <option value="pak">Pakistan</option>
+                    <option value="US">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Qr">Qatar</option>
+                </select>
+            </p>
+            </fieldset>
+            <fieldset>
+                <legend>Password</legend>
+            <p>Password
+                <input type="password" name="password" size="15" minlength="8" maxlength="30"/>
+            </p>
+
+            <p>Re-enter Password
+                <input type="password" name="password" size="15" minlength="8" maxlength="30"/>
+            </p>
+            </fieldset>
+            <fieldset>
+                <legend>Interests</legend>
+            <p>
+                Interests
+                <input type="checkbox" name="interests" value="men"/>Men's Clothing
+                <input type="checkbox" name="interests" value="women"/>Women's Clothing
+                <input type="checkbox" name="interests" value="acc"/>Accessories
+                <input type="checkbox" name="interesets" value="elec"/>Electronics
+
+            </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Picture</legend>
+            <p>Upload Profile Picture</p>
+            <input type="file" name="dp"/>
+            <br/>
+            <input type="submit" value="Upload">
+            </fieldset>
+
+            <p>Comments</p>
+            <textarea name="comments" rows="4" cols="30">Enter your comments</textarea>
+            
+            <br/>
+            <br/>
+            <input type="submit" value="Submit Form"/>
+      </form>
+      <br/>
+      <br/>
+      
+      <a href="../index.html">Take me to main index</a>
+  </body>
+</html>

@@ -1,10 +1,10 @@
 # Class 2 summary
 
 ### **REACT**
-It is a JS library 
-It was created by Facebook
-It is a UI library
-It is a tool for building UI components.
+*It is a JS library 
+*It was created by Facebook
+*It is a UI library
+*It is a tool for building UI components.
 
 ## Steps taken in class
 * Node.js already installed

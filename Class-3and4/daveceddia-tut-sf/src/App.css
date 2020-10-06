@@ -3,6 +3,20 @@
   color: blue;
 
 }
+.Greet {
+  text-align: center;
+  color: red;
+}
+.media {
+  text-align: center;
+  color:darkorange;
+}
+
+.gate {
+  text-align: center;
+  color:slateblue;
+  font-size: large;
+}
 /*
 .App-logo {
   height: 40vmin;

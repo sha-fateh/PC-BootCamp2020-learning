@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function Room() {
@@ -12,14 +11,14 @@ function Room() {
 
   return (
   <div id="main" className={`room ${brightness}`}><div className="text">The Room is {isLit ? 'lit' : 'dark'}<br/>
-  Temperature is : {temp}&#8451; <br/>
+  Temperature is : <strong>{temp}&#8451;</strong> <br/>
   <button onClick={() => setLit(!isLit)}>
     Flip</button><br/>
     <button onClick={() => setLit(true)}>
       ON</button>
       <button onClick={() => setLit(false)}>
         OFF</button><br/>
-        Temperature Control<br/>
+        <h3>Temperature Control</h3><br/>
         <button onClick={() => setTemp(temp + 1)}>
           +</button>
           <button onClick={() => setTemp(temp - 1)}>

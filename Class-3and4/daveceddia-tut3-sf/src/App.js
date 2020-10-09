@@ -16,11 +16,11 @@ function Reddit() {
   }, []);
   
   return (
-    <div>
+    <div class="App">
       <h1>/r/reactjs</h1>
       <ul>
         {posts.map(post =>(
-          <li key={post.id}>{post.title}</li>
+          <li key={post.id}><a href={post.url}>{post.title}</a><br/>POSTED BY: {post.author_fullname}</li>
         ))}
       </ul>
     </div>
